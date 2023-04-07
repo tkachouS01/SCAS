@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АССЦ - "Заявки"</title>
+    
+    <link href="fonts/Roboto-Regular.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="resetStyle.css">
+    <link rel="stylesheet" href="systemPage/css & scss/requencesStyle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidenav">
+            <a href="mainPage/main.html" class="sidenav__logo">Система автоматизации<br>сервисного центра</a>
+            <div class="sidenav__hideMehu active"><div id="circle"></div></div>
+
+            <nav class="sidenav__nav">
+                <div class="nav__item active">
+                    <img src="systemPage/ing/requece.png" alt="Заявки">
+                    <span>Заявки</span>
+                </div>
+                <div class="nav__item notActive">
+                    <img src="systemPage/ing/shop.png" alt="Магазин">
+                    <span>Магазин</span>
+                </div>
+                <div class="nav__item notActive">
+                    <img src="systemPage/ing/warehouses.png" alt="Склады">
+                    <span>Склады</span>
+                </div>
+                <div class="nav__item notActive">
+                    <img src="systemPage/ing/clients.png" alt="Клиенты">
+                    <span>Клиенты</span>
+                </div>
+                <div class="nav__item notActive">
+                    <img src="systemPage/ing/workers.png" alt="Работники">
+                    <span>Работники</span>
+                </div>
+                <div class="nav__item notActive">
+                    <img src="systemPage/ing/finances.png" alt="Финансы">
+                    <span>Финансы</span>
+                </div>
+                <div class="nav__item notActive">
+                    <img src="systemPage/ing/statistic.png" alt="Статистика">
+                    <span>Статистика</span>
+                </div>
+                <div class="nav__item notActive">
+                    <img src="systemPage/ing/settings.png" alt="Настройки">
+                    <span>Настройки</span>
+                </div>
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <a href="#" class="header__logo">
+                        <img src="systemPage/ing/userLogo.png" alt="Иконка пользователя">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content__fanctions">
+                <div class="fanctions__left-func">
+                    <div class="left-func__name-section">
+                        Заявки
+                    </div>
+                    <div class="left-func__update">
+                        <img src="systemPage/ing/update.png" alt="Обновить информацию">
+                    </div>
+                    <div class="left-func__new-request">
+                        <a href="#Popup_add">+ Новая заявка</a>
+                    </div>
+                    <div class="left-func__filter">
+                        <img src="systemPage/ing/filter.png" alt="Фильтр заявок">
+                    </div>
+                </div>
+
+                <div class="fanctions__right-func">
+                    <div class="right-func__table-settings">
+                        <img src="systemPage/ing/settings.png" alt="Настройки таблицы">
+                    </div>
+                    <div class="right-func__search">
+                        <input type="text" placeholder="Искать здесь...">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="containerTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Заявка</th>
+                            <th>Статус</th>
+                            <th>Устройство</th>
+                            <th>Причина обращения</th>
+                            <th>Клиент</th>
+                            <th>Исполнитель</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>#11</th>
+                            <td><span class="status">Новый</span></td>
+                            <td>Ноутбук Asus</td>
+                            <td>Нет изображения</td>
+                            <td>Сорокин Владимир Натанович</td>
+                            <td>Алексей01</td>
+                        </tr>
+                        <tr>
+                            <th>#10</th>
+                            <td><span class="status">На диагностике</span></td>
+                            <td>Ноутбук Asus</td>
+                            <td>Залитие</td>
+                            <td>Тихонов Ипполит Геннадьевич</td>
+                            <td>Александр01</td>
+                        </tr>
+                        <tr>
+                            <th>#9</th>
+                            <td><span class="status">Готов</span></td>
+                            <td>Ноутбук Lenovo</td>
+                            <td>Артефакты</td>
+                            <td>Субботин Игнат Андреевич</td>
+                            <td>Александр01</td>
+                        </tr>
+                        <tr>
+                            <th>#8</th>
+                            <td><span class="status">Закрыт</span></td>
+                            <td>Телефон Sumsung</td>
+                            <td>Замена дисплея</td>
+                            <td>Макарова Лиана Эльдаровна</td>
+                            <td>Алексей01</td>
+                        </tr>
+                        <tr>
+                            <th>#7</th>
+                            <td><span class="status">Согласование</span></td>
+                            <td>Системный блок</td>
+                            <td>Апгрейд</td>
+                            <td>Михеев Виссарион Петрович</td>
+                            <td>Максим01</td>
+                        </tr>
+                        <tr>
+                            <th>#6</th>
+                            <td><span class="status">Отменён</span></td>
+                            <td>Монитор AOC</td>
+                            <td>Нет изображения HDMI</td>
+                            <td>Виноградов Аким Семенович</td>
+                            <td>Александр01</td>
+                        </tr>
+                        <tr>
+                            <th>#5</th>
+                            <td><span class="status">Готов</span></td>
+                            <td>Ноутбук HP</td>
+                            <td>Техническое обслуживание</td>
+                            <td>Афанасьева Эллина Гордеевна</td>
+                            <td>Максим01</td>
+                        </tr>
+                        <tr>
+                            <th>#4</th>
+                            <td><span class="status">Новый</span></td>
+                            <td>Видеокарта Palit</td>
+                            <td>Нет изображения</td>
+                            <td>Молчанова Анжелика Демьяновна</td>
+                            <td>Екатерина01</td>
+                        </tr>
+                        <tr>
+                            <th>#3</th>
+                            <td><span class="status">Ждёт запчасть</span></td>
+                            <td>Материнская плата GIGABYTE</td>
+                            <td>Замена хаба</td>
+                            <td>Макарова Лиана Эльдаровна</td>
+                            <td>Александр01</td>
+                        </tr>
+                        <tr>
+                            <th>#2</th>
+                            <td><span class="status">Отменён</span></td>
+                            <td>Ноутбук Ryzer</td>
+                            <td>Замена клавиатуры</td>
+                            <td>Колесникова Лилу Валерьяновна</td>
+                            <td>Екатерина01</td>
+                        </tr>
+                        <tr>
+                            <th>#1</th>
+                            <td><span class="status">Закрыт</span></td>
+                            <td>Системный блок Cooler Master</td>
+                            <td>Техническое обслуживание</td>
+                            <td>Силин Панкратий Валерьевич</td>
+                            <td>Алексей01</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="Popup_add" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__title">
+                    <a href="#" class="title__close"><img src="systemPage/ing/close.png" alt="Закрыть окно"></a>
+                    <div class="title__text">Новая заявка</div>
+                </div>
+                <div class="content__tex-info">
+                    <div class="item__input">
+                        <span>Тип заявки</span>
+                        <div class="selectBlock">
+                            <img src="systemPage/ing/typeRequence.png" alt="">
+                            <select id="textTypeRequest" >
+                                <option value=”val1”>Ремонт</option>
+                                <option value=”val2”>Гарантийный ремонт</option>
+                                <option value=”val3”>Оценка</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item__input">
+                        <span>Начальный статус</span>
+                        <div class="selectBlock">
+                            <img src="systemPage/ing/startStatus.png" alt="">
+                            <select id="textStartCtatus" >
+                                <option value=”val1”>Новый</option>
+                                <option value=”val2”>На диагностике</option>
+                                <option value=”val3”>Ждёт запчасть</option>
+                                <option value=”val4”>Согласование</option>
+                                <option value=”val5”>Отменён</option>
+                                <option value=”val6”>Закрыт</option>
+                                <option value=”val7”>Готов</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item__input">
+                        <span>Заявку принял</span>
+                        <div class="selectBlock">
+                            <img src="systemPage/ing/receiver.png" alt="">
+                            <select id="textReceiver" >
+                                <option value=”val1”>Менеджер Иван</option>
+                                <option value=”val2”>Менеджер Анастасия</option>
+                                <option value=”val3”>Менеджер Екатерина</option>
+                                <option value=”val4”>Менеджер Денис</option>
+                                <option value=”val5”>Администратор Елена</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item__input">
+                        <span>Исполнитель заявки</span>
+                        <div class="selectBlock">
+                            <img src="systemPage/ing/executor.png" alt="">
+                            <select id="textReceiver" >
+                                <option value=”val1”>Не выбран</option>
+                                <option value=”val2”>Алексей01</option>
+                                <option value=”val3”>Александр01</option>
+                                <option value=”val4”>Максим01</option>
+                                <option value=”val5”>Екатерина01</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__info">
+                    <div class="info__item">
+                        <div class="item__title">
+                            <img src="systemPage/ing/client.png" alt="">
+                            <span>Клиент</span>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="textNewClient" checked name="yes"/>
+                            <span>Новый клиент</span>
+                        </div>
+                        <div class="item__input required">
+                            <span>Фамилия</span>
+                            <input type="text" id="textLastName" placeholder="Фамилия">
+                        </div>
+                        <div class="item__input required">
+                            <span>Имя</span>
+                            <input type="text" id="textFirstName" placeholder="Имя">
+                        </div>
+                        <div class="item__input required">
+                            <span>Отчество</span>
+                            <input type="text" id="textMiddleName" placeholder="Отчество">
+                        </div>
+                        <div class="item__input required">
+                            <span>Номер телефона</span>
+                            <input type="text" id="textTelephone" placeholder="Номер телефона">
+                        </div>
+                        <div class="item__input">
+                            <span>Email</span>
+                            <input type="text" id="textEmail" placeholder="Электронная почта">
+                        </div>
+                        <div class="item__input">
+                            <span>Адрес</span>
+                            <input type="text" id="textAddress" placeholder="Адрес">
+                        </div>
+                        <div class="item__input">
+                            <span>Заметка</span>
+                            <input type="text" id="textNote" placeholder="Заметка">
+                        </div>
+                        <div class="item__input">
+                            <span>Откуда узнал?</span>
+                            <select id="textSourcesOfInformation" >
+                                <option value=”val1”>Не выбрано</option>
+                                <option value=”val2”>Facebook</option>
+                                <option value=”val3”>Google</option>
+                                <option value=”val4”>Instagram</option>
+                                <option value=”val5”>VK</option>
+                                <option value=”val5”>Yandex</option>
+                                <option value=”val5”>YouTube</option>
+                                <option value=”val5”>TikTok</option>
+                                <option value=”val5”>Наружная реклама</option>
+                                <option value=”val5”>По рекомендации</option>
+                                <option value=”val5”>Реклама на сайте</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+
+                    <!----------------------------------------------------->
+                    <div class="info__item">
+                        <div class="item__title">
+                            <img src="systemPage/ing/device.png" alt="">
+                            <span>Устройство</span>
+                        </div>
+                        <div class="item__input required">
+                            <span>Тип</span>
+                            <select id="textType" >
+                                <option value=”val1”>Не выбрано</option>
+                                <option value=”val2”>Компьютер</option>
+                                <option value=”val3”>Ноутбук</option>
+                                <option value=”val4”>Планшет</option>
+                                <option value=”val5”>Смарфон</option>
+                                <option value=”val6”>Компьютерная комплектующая</option>
+                                <option value=”val7”>Периферийное устройство</option>
+                            </select>
+                        </div>
+                        <div class="item__input required">
+                            <span>Модель</span>
+                            <input type="text" placeholder="Модель">
+                        </div>
+                        <div class="item__input required">
+                            <span>Причина обращения</span>
+                            <input type="text" id="textMalfunction"placeholder="Причина обращения">
+                        </div>
+                        <div class="item__input">
+                            <span>Комплектация</span>
+                            <select id="textEquipment" >
+                                <option value=”val1”>Только устройство</option>
+                                <option value=”val2”>Зарядное устройство</option>
+                                <option value=”val3”>Коробка</option>
+                                <option value=”val4”>Документация</option>
+                            </select>
+                        </div>
+
+                        <div class="item__input">
+                            <span>Внешний вид</span>
+                            <select id="textAppearance" >
+                                <option value=”val1”>Не указано</option>
+                                <option value=”val2”>Потёртости</option>
+                                <option value=”val3”>Пыль</option>
+                                <option value=”val4”>Сколы</option>
+                                <option value=”val4”>Следы падений</option>
+                            </select>
+                        </div>
+                        <div class="item__input">
+                            <span>Код разблокировки</span>
+                            <input type="text" id="textUnlockCode"placeholder="Код разблокировки">
+                        </div>
+                    </div>
+                    <!----------------------------------------------------->
+                    <div class="info__item">
+                        <div class="item__title">
+                            <img src="systemPage/ing/info.png" alt="">
+                            <span>Описание</span>
+                        </div>
+                        <div class="item__input">
+                            <span>Предоплата, руб.</span>
+                            <input type="text" id="textPrepayment"placeholder="Сумма предоплаты">
+                        </div>
+                        <div class="item__input">
+                            <span>Ожидаемая стоимость, руб.</span>
+                            <input type="text" id="textPrise"placeholder="Ожидаемая стоимость">
+                        </div>
+                        <div class="item__input">
+                            <span>Ожидаемая дата выдачи</span>
+                            <input type="date" id="textPrise">
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__bottom">
+                    <button class="bottom__button">Принять</button>
+                    <span class="bottom__info">напечатать 1 документ</span>
+                    <img src="systemPage/ing/expand.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
